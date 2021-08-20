@@ -1,6 +1,7 @@
 package cn.com.hohistar.spmvc.model;
 
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Proxy;
@@ -10,6 +11,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "tbl_customer")
 @Data
+@AllArgsConstructor
 @NoArgsConstructor
 public class Customer {
 

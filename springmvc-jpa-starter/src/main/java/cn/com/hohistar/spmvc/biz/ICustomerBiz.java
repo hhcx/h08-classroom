@@ -7,4 +7,6 @@ import java.util.List;
 public interface ICustomerBiz {
 
     public List<Customer> listAll();
+
+    public Long create(Customer customer);
 }
