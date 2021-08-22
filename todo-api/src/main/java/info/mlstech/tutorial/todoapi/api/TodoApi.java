@@ -9,23 +9,26 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("/todo")
 public class TodoApi {
 
     @Autowired
     private TodoBiz todoBiz;
 
+    // No.1
     @GetMapping("/ok")
     public String ok() {
         return "ok";
     }
 
-    @GetMapping("/todo")
+    // No.2
+    @GetMapping
     public List<Todo> getTodoList() {
 
         return todoBiz.listAll();
     }
 
+    // No.3
     @GetMapping("/test/add/todos")
     public String testAddTodos() {
 
